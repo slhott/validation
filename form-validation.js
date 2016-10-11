@@ -14,11 +14,17 @@ function validate(){
     }
     {
   var passEntered = document.getElementById("pass").value;
-  
+  if(passEntered.value.text "password"){
+    document.getElementById(passwordGroup).classList.add("has-error")
+  }
+  if(passEntered.value.text ""){
+    document.getElementById(passwordGroup).classList.add("has-success")
+  }
   //Show message that there is an error with the password...
   document.getElementById("passwordError").innerHTML="Bad password.";
   document.getElementById("passwordError").classList.remove("hidden-message");
   document.getElementById("passwordError").classList.add("shown-message");
   //Turn the password items red
   document.getElementById("passwordGroup").classList.add("has-error");
+ }
 }
